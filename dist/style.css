@@ -1,0 +1,294 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/quicksand/v31/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkKEo58a-xw.ttf) format('truetype');
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+html,
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+html {
+  height: 100vh;
+  overflow: hidden;
+  font-size: 24px;
+}
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 26px;
+  }
+}
+body {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  height: 100%;
+  background-color: #000000;
+}
+.wrap {
+  height: calc(100% + 20px);
+  width: calc(100% + 20px);
+  position: relative;
+  left: calc(20px * -0.5);
+  top: calc(20px * -0.5);
+  overflow: hidden;
+  z-index: 1;
+  filter: blur(5px);
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: translateZ(0) scale(1, 1);
+  opacity: 0;
+}
+.bg-1 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-1.jpg');
+}
+.bg-2 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-2.jpg');
+}
+.bg-3 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-3.jpg');
+}
+.bg-4 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-4.jpg');
+}
+.bg-5 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-5.jpg');
+}
+.bg-6 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-6.jpg');
+}
+.bg-7 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-7.jpg');
+}
+.bg-8 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-8.jpg');
+}
+.bg-9 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-9.jpg');
+}
+.bg-10 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-10.jpg');
+}
+.bg-11 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-11.jpg');
+}
+.bg-12 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-12.jpg');
+}
+.bg-13 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-13.jpg');
+}
+.bg-14 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-14.jpg');
+}
+.bg-15 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-15.jpg');
+}
+.bg-16 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-16.jpg');
+}
+.bg-17 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-17.jpg');
+}
+.bg-18 {
+  background-image: url('https://raw.githubusercontent.com/mariawarnes/codepen-assets/main/firewatch-18.jpg');
+}
+.interval {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000000;
+  z-index: 1;
+  opacity: 0;
+}
+.dialogue {
+  color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  padding: 20px;
+  opacity: 0;
+  visibility: visible;
+}
+@media screen and (min-width: 800px) {
+  .dialogue {
+    max-width: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  br {
+    content: " ";
+    margin: 0 3px;
+  }
+}
+p {
+  margin-top: 0;
+  cursor: default;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+.year {
+  color: #86878D;
+}
+.year.white {
+  color: #fff;
+}
+.orange {
+  color: #FC5724;
+}
+.caps {
+  font-family: 'Quicksand', sans-serif;
+  font-variant: small-caps;
+  font-size: 2rem;
+  letter-spacing: 0.125em;
+  margin-bottom: 0;
+  font-weight: 200;
+}
+.smallcaps {
+  font-family: 'Quicksand', sans-serif;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.25em;
+  margin-bottom: 0;
+}
+.smallcaps + .smallcaps {
+  margin-top: 1rem;
+}
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  outline: inherit;
+  display: inline-block;
+  color: #FC5724;
+  cursor: default;
+  border-bottom: 2px solid transparent;
+  position: relative;
+  opacity: 1;
+  font-size: inherit;
+  font-family: inherit;
+  text-shadow: inherit;
+  transition: opacity 2s, left 2s, right 2s, top 2s, bottom 2s;
+}
+button.hidden {
+  opacity: 0;
+}
+button:hover,
+button.hover {
+  border-color: #FC5724;
+}
+button.left {
+  left: 0;
+}
+button.left.hidden {
+  left: 20px;
+}
+button.right {
+  right: 0;
+}
+button.right.hidden {
+  right: 20px;
+}
+button.up {
+  top: 0;
+}
+button.up.hidden {
+  top: 20px;
+}
+button.down {
+  bottom: 0;
+}
+button.down.hidden {
+  bottom: 20px;
+}
+.decision-wrap button {
+  display: inline-block;
+  margin: 0 auto;
+}
+@media screen and (min-width: 800px) {
+  .decision-wrap button {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+  }
+}
+.decision-wrap button:not(:first-child) {
+  margin-top: 1em;
+}
+@media screen and (min-width: 800px) {
+  .decision-wrap button:not(:first-child) {
+    margin-left: 100px;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .wide {
+    margin-left: -30%;
+    margin-right: -30%;
+  }
+}
+.wide button {
+  max-width: initial;
+}
+@media screen and (min-width: 800px) {
+  .slash {
+    display: inline-block;
+    width: 2px;
+    height: 120px;
+    transform: skew(-25deg);
+    background: #FC5724;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    margin-top: -50px;
+  }
+}
+.hidden {
+  pointer-events: none;
+  visibility: hidden;
+}
+#loader {
+  z-index: 1;
+  max-width: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
