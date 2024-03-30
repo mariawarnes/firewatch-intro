@@ -21,7 +21,8 @@ Interactive recreation of the Introduction to the video game Firewatch by Campo 
 
 ## Features
 - Background mouse parallax effect.
-- Keyboard navigation. 
+- Keyboard navigation.
+- Story personalisation and multiple endings.
 
 
 <p align="center">
