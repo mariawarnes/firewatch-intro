@@ -30,3 +30,5 @@ Interactive recreation of the Introduction to the video game Firewatch by Campo 
     <img src="https://img.shields.io/badge/Live Demo-black.svg?style=for-the-badge&logo=codepen&logoColor=white" alt="Live Demo">
   </a>
 </p>
+
+![image](https://shots.codepen.io/username/pen/KKxQLer-800.jpg?version=1710865657)
