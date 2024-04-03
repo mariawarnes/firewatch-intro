@@ -31,4 +31,4 @@ Interactive recreation of the Introduction to the video game Firewatch by Campo 
   </a>
 </p>
 
-![image](https://shots.codepen.io/username/pen/KKxQLer-800.jpg?version=1710865657)
+[![image](https://shots.codepen.io/username/pen/KKxQLer-800.jpg?version=1710865657)](https://codepen.io/mariawarnes/pen/KKxQLer)
